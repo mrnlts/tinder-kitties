@@ -1,0 +1,27 @@
+<div id="list">
+  <nav>
+    <h1>The bachelors</h1>
+    <a href="/cats/create">Create cat</a>
+  </nav>
+  <div id="kitties">
+  {{#each cats}}
+    <div id="kitty">
+      <img src="{{this.image}}">
+      <div id="main">
+        <h1>{{ this.name }}</h1>
+        <a href="/cats/{{this._id}}"> 
+          Check details!
+        </a>
+      </div>
+      <div id="buttons">
+        <form action="/cats/{{this._id}}" method="POST" id="delete">
+          <button type="submit" style="cursor: pointer;">delete</button>
+        </form>
+        <form action="/cats/update/{{this._id}}" method="GET" id="update">
+          <button type="submit" style="cursor: pointer;">update</button>
+        </form>
+      </div>
+    </div>
+  {{/each}}
+  </div>
+</div>

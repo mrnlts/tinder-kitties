@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#home {
+  background-image: url("https://i.pinimg.com/564x/e0/72/1c/e0721ccdbe7571de3c3751f47d5b0798.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-form > input {
+  background-color: lightcoral;
+  color: white;
+  padding: 3rem;
+  font-size: 20px;
+  border-radius: 5%;
+}
+
+#titles {
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 50px;
+  background-color: rgba(127, 255, 212, 0.363);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#list {
+  padding: 3rem;
+  background-image: url('https://i.pinimg.com/originals/b4/c7/03/b4c70368caa61f6ad891ca0302942490.png');
+  height: 200vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#kitties {
+  background-color: rgba(224, 255, 255, 0.356);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#list > nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  padding: 0 5rem 3rem;
+}
+
+#list > nav > h1{
+  font-size: 80px;
+  background-color: rgba(255, 255, 255, 0.555);
+  color: #00B7FF;
+}
+
+#list > nav > a {
+  font-size: 50px;
+  background-color: #00B7FF;
+  color: white;
+  padding: 1rem 5rem;
+  border-radius: 10%;
+}
+
+#kitty {
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+}
+
+#main {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#buttons > form > button{
+  font-size: 30px;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 10%;
+}
+
+#update > button{
+  background-color: rgb(49, 134, 49);
+}
+
+#delete > button {
+  background-color: tomato;
+}
+
+#kitty img {
+  width: 80%;
+  height: 55%;
+  margin: 2rem;
+}
